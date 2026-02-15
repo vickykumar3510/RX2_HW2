@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux"
 import { removeBook, totalBooks } from "./actions"
 
-const LibrarySummary = () => {
+const AddBookSummary = () => {
   const dispatch = useDispatch()
   const books = useSelector((state) => state.books)
   const total = useSelector((state) => state.total)
@@ -27,4 +27,4 @@ const LibrarySummary = () => {
   )
 }
 
-export default LibrarySummary
+export default AddBookSummary
